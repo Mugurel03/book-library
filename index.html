@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link>Book Library </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Library</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title-header">Book Library</h1>
+    </header>
+
+    <main>
+      <button class="btn btn-add">+ Add Book</button>
+      <div class="container">
+        <div class="card hidden">
+          <button class="close-modal">&times;</button>
+          <div class="content">
+            <form action="submit">
+              <label for="title">Book Title</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Book Title"
+              />
+              <label for="author">Author Name</label>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                placeholder="Author Name"
+              />
+              <label for="pages">Number of Pages</label>
+              <input
+                type="number"
+                id="pages"
+                name="pages"
+                placeholder="Number of Pages"
+              />
+
+              <label for="read">Read?</label>
+              <input type="checkbox" id="read" name="read" />
+              <input type="submit" value="Add" />
+            </form>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </main>
+
+    <footer>
+      <h1 id="footer-text">Copyright &#169; Mugurel03</h1>
+      <a href="https://github.com/Mugurel03" target="_blank"
+        ><img
+          id="github-logo"
+          src="images/GitHub-Mark-32px.png"
+          alt="github logo "
+      /></a>
+    </footer>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

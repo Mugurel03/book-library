@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Oswald&family=Roboto&display=swap');
+
+:root {
+    --primary-color: #16a34a;
+    --secondary-color: #22c55e ;
+    --text-color: #171717;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#title-header {
+    margin-left: 3rem;
+    font-size: 28px;
+}
+
+
+main {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height:520px;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    height: 3.20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+#footer-text {
+    font-size: 22px;
+    
+}
+
+
+#github-logo {
+    width: 30px;
+    height: 30px;
+}
